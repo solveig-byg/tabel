@@ -6,7 +6,8 @@ input.onGesture(Gesture.Shake, function () {
     basic.showNumber(tal)
 })
 input.onButtonPressed(Button.A, function () {
-    tal += tal % 10
+    tal += 1
+    tal = tal % 10
     basic.showNumber(tal)
 })
 input.onButtonPressed(Button.AB, function () {
